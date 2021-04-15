@@ -59,11 +59,11 @@ Provision a database quickly with https://sandbox.neo4j.com/?usecase=movies[Neo4
 
 == Branches
 
-[%header,cols=2*]
+[%header,cols=5*]
 |===
-|Name| Description| Start date | End Date| Status (Closed, Blocked, Running, Future)|
-| main | main branch, it'production branch, no one can commit directly here, only _develop_ and _hotfix_ branches can be merged here.| 2021-04-15| never|Running|
-| develop| develop branch, it's develop branch, no one should commit directly here. Every branch _feature_ and _fix_ will be merged here.| 2021-04-15| never|Running|
-
+| Name | Ancestor| Description | Start date | End Date| Status (Closed, Blocked, Running, Future)|
+| main | by the fork | main branch, it'production branch, no one can commit directly here, only _develop_ and _hotfix_ branches can be merged here.| 2021-04-15| never|Running|
+| develop | main | develop branch, it's develop branch, no one should commit directly here. Every branch _feature_ and _fix_ will be merged here.| 2021-04-15| never|Running|
+| fix/successful-local-execution | develop | The project must run in local workstation without CI and Docker | 2021-04-15| never|Running|
 
 Please set `NEO4J_VERSION` to `3.5` when running Neo4j 3.5.x. Leave as is otherwise.
